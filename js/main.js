@@ -39,4 +39,5 @@ function FahrenheitToKelvin (fahrenheit)
 
     
 }
+console.log(celsius);
 
