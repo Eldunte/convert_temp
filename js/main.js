@@ -1,7 +1,12 @@
 var celsius;
 
 var inputELement = document.querySelector("#addTemp ");
-var select
+var selectElement = document.querySelector("#AddTempValues")
+var selectElementValue = document.querySelector("TempC")
+console.log(selectElementValue)
+
+
+
 
 
 function CelsiusToFehrenheit(celsius) {
@@ -35,6 +40,7 @@ function FahrenheitToKelvin(fahrenheit) {
 
 
 }
+
 
 
 

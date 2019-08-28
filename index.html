@@ -14,13 +14,14 @@
 
 
 <body>
+ 
 
-    <input class="input_temp" id="addTemp" type="select" placeholder="Adicionar temperatura">
+    <input onchange="consolar();" class="input_temp" id="addTemp" type="select" placeholder="Adicionar temperatura">
     <select id="AddTempValues">
-        <option value="C">Celsius</option>
+        <option id="TempC" value="C">Celsius</option>
         <option value="F">Fahrenheit</option>
         <option value="K">Kelvin</option>
-
+        
     </select>
     </input>
 
