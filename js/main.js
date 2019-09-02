@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var selecionado;
 var convert;
 var inputElement;
@@ -67,40 +68,71 @@ Converter();
 /*
 function CelsiusToFehrenheit() {
     fahrenheit = parseFloat((addTemp * 9 / 5) + 32);
+=======
+var celsius;
+
+var inputELement = document.querySelector("#addTemp ");
+var selectElement = document.querySelector("#AddTempValues")
+var selectElementValue = document.querySelector("TempC")
+console.log(selectElementValue)
+
+
+
+
+
+function CelsiusToFehrenheit(celsius) {
+    fahrenheit = parseFloat((celsius * 9 / 5) + 32);
+>>>>>>> 42ca0456c3246f2dd9c07f4f05852ae3ffddbc20
     return fahrenheit;
 
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 42ca0456c3246f2dd9c07f4f05852ae3ffddbc20
 function CelsiusToKelvin(celsius) {
     kelvin = parseFloat(celsius + 273.15);
     return kelvin;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 42ca0456c3246f2dd9c07f4f05852ae3ffddbc20
 function KelvinToCelsius(kelvin) {
     celsius = parseFloat(kelvin - 273.15);
     return celsius;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 42ca0456c3246f2dd9c07f4f05852ae3ffddbc20
 function KelvinToFahrenheit(kelvin) {
     fahrenheit = parseFloat(kelvin - 273.15);
     return fahrenheit;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 42ca0456c3246f2dd9c07f4f05852ae3ffddbc20
 function FahrenheitToCelsius(fahrenheit) {
     celsius = parseFloat((fahrenheit - 32) * 5 / 9);
     return celsius;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 42ca0456c3246f2dd9c07f4f05852ae3ffddbc20
 function FahrenheitToKelvin(fahrenheit) {
     kelvin = parseFloat((fahrenheit - 32) * 5 / 9 + 273.15);
     return kelvin;
 
 
+<<<<<<< HEAD
 
 
 }
@@ -135,3 +167,17 @@ function RealizarCalculo(receber_valor, receber_temp, receber_convert, receber_r
 
 }
 */
+=======
+}
+
+
+
+
+
+//lembrete: criar uma variável apenas que puxe o valor do input do "addTempo"
+//criar variáveis que puxem o valor dos selects
+//criar uma variável que puxe o valor do input do resultado, e através dele, aplique as functions de conversao
+//esboço: if(var input addtemp = tal and select.value temp = tal){
+
+//  function();}
+>>>>>>> 42ca0456c3246f2dd9c07f4f05852ae3ffddbc20
