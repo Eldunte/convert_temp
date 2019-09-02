@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/estilo.css">
-    <script src="/js/main.js"></script>
-    
+
     <title>Conversor de temperatura</title>
 </head>
 
-
+<head class="Cabecalho">Conversor de temperatura</head>
+<div id="receber_valor"></div>
+<div id="receber_temp"></div>
+<div id="receber_convert"> </div>
+<div id="receber_resultado"></div>
 
 <body>
-    <input class="input_temp" id="addTemp" type="select" placeholder="Adicionar 
-    temperatura">
-    <select>
+    <p>
+
+    </p>
+    <div id="QualTemp">Insira a temperatura(digite "ENTER" para confirmar</div>
+    <input class="input_temp" id="addTemp" type="number" placeholder="Adicionar temperatura" onchange="Temperatura();">
+
+    <select id="AddTempValues" onchange="Selecionar(); ">
+        <option value="">--Escala--</option>
         <option value="C">Celsius</option>
         <option value="F">Fahrenheit</option>
         <option value="K">Kelvin</option>
-
     </select>
-    </input>
 
-    <input class="input_tipo" id="AddConv" type="Select" placeholder="Converter 
-    Para">
-    <select>
+    <p>
+
+    </p>
+    <div id="Converter_para">Converter para:</div>
+    <select id="Escolha" onchange="Converter();">
+        <option value=""> --Escala--</option>
         <option value="Celsius">Celsius</option>
         <option value="Fahrenheit">Fahrenheit</option>
         <option value="Kelvin">Kelvin</option>
-
     </select>
 
-    <input class="input_resultado" id="Resultado" type="text" placeholder="valor
-     final">
+    <p>
 
+    </p>
+    
+    <div id="Convertido">Resultado</div>
+    
+    <input id="Resultado" type="number" placeholder disabled="valor final"> <button
+        onclick="RealizarCalculo();">
+        Realizar Conversão
+        
+    </button>
+
+
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
