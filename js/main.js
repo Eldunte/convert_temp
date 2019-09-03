@@ -33,16 +33,16 @@ function Converter() {
 function RealizarCalculo() {
     valorResultado = document.getElementById('Resultado');
     if (selecionado == "C" && convert == "Fahrenheit") {
-        calculo = parseFloat((document.getElementById('addTemp').value * 9 / 5) 
-        + 32);
+        calculo = parseFloat((document.getElementById('addTemp').value * 9 / 5) + 32);
         valorResultado.value = calculo;
         console.log(calculo);
         //Celsius para Fahrenheit
+
         if (calculo < -479.67) {
             valorResultado.value = null;
             alert("Não é possível converter." +
                 " Razão: Temperatura em fahrenheit é menor que -479,67")
-
+            //serve para avisar ao usuário quando seu valor é invalido
 
         }
 
@@ -54,6 +54,13 @@ function RealizarCalculo() {
             valorResultado.value = calculo;
             console.log(calculo);
             //Celsius para Kelvin
+            if (calculo < 0) {
+                valorResultado.value = null;
+                alert("Não é possível converter." +
+                    " Razão: Temperatura em kelvin é menor que 0")
+                //avisa quando o valor for inválido
+            }
+
         }
         else {
             if (selecionado == "F" && convert == "Celsius") {
@@ -62,6 +69,13 @@ function RealizarCalculo() {
                 valorResultado.value = calculo;
                 console.log(calculo);
                 //fahrenheit para Celsius
+                if (calculo < -273.15) {
+                    valorResultado.value = null;
+                    alert("Não é possível converter." +
+                        " Razão: Temperatura em celsius é menor que -273.15")
+                    //avisa quando o valor for inválido 
+
+                }
             }
             else {
                 if (selecionado == "F" && convert == "Kelvin") {
@@ -70,39 +84,45 @@ function RealizarCalculo() {
                     valorResultado.value = calculo;
                     console.log(calculo);
                     //Fahrenheit pra Kelvin
+                    if (calculo < 0) {
+                        valorResultado.value = null;
+                        alert("Não é possível converter." +
+                            " Razão: Temperatura em kelvin é menor que 0")
+                        //avisa quando o valor for invalido
+                    }
                 }
+
+
                 else {
-                    if (selecionado == "F" && convert == "Kelvin") {
+                    if (selecionado == "K" && convert == "Celsius") {
                         numero = parseFloat(document.getElementById('addTemp').value)
-                        calculo = parseFloat((numero - 32) * 5 / 9 + 273.15);
+                        calculo = parseFloat(numero - 273.15);
                         valorResultado.value = calculo;
                         console.log(calculo);
-                        //Fahrenheit para Kelvin
+                        //Kelvin para Celsius
+                        if (calculo < -273.15) {
+                            valorResultado.value = null;
+                            alert("Não é possível converter." +
+                                " Razão: Temperatura em celsius é menor que -273.15")
+                            //avisa quando o valor for inválido 
+
+                        }
                     }
+
                     else {
-                        if (selecionado == "K" && convert == "Celsius") {
+                        if (selecionado == "K" && convert == "Fahrenheit") {
                             numero = parseFloat(document.getElementById('addTemp').value)
-                            calculo = parseFloat(numero - 273.15);
+                            calculo = parseFloat(1.8 * (numero - 273.15) + 32);
                             valorResultado.value = calculo;
                             console.log(calculo);
-                            //Kelvin para Celsius
-                        }
-
-                        else {
-                            if (selecionado == "K" && convert == "Fahrenheit") {
-                                numero = parseFloat(document.getElementById('addTemp').value)
-                                calculo = parseFloat(1.8 * (numero - 273.15) + 32);
-                                valorResultado.value = calculo;
-                                console.log(calculo);
-                                //kelvin para fahrenheit
-                                if (calculo < -479.67) {
-                                    valorResultado.value = null;
-                                    alert("Não é possível converter." +
-                                        " Razão: Temperatura em fahrenheit é menor que -479,67")
-
-                                }
-
+                            //kelvin para fahrenheit
+                            if (calculo < -479.67) {
+                                valorResultado.value = null;
+                                alert("Não é possível converter." +
+                                    " Razão: Temperatura em fahrenheit é menor que -479,67")
+                                //serve para avisar quando o valor é invalido
                             }
+
                         }
                     }
                 }
@@ -110,38 +130,3 @@ function RealizarCalculo() {
         }
     }
 }
-
-
-
-
-
-
-/*
-
-
-function KelvinToCelsius(kelvin) {
-    celsius = parseFloat(kelvin - 273.15);
-    return celsius;
-}
-
-
-function KelvinToFahrenheit(kelvin) {
-    fahrenheit = parseFloat(kelvin - 273.15);
-    return fahrenheit;
-}
-
-
-}
-
-
-
-
-
-
-
-*/
-
-
-
-
-
