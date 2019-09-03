@@ -22,10 +22,11 @@
 
     </p>
     <div id="QualTemp">Insira a temperatura(digite "ENTER" para confirmar</div>
-    <!-- -->
+    <!--input que recebe o valor da temperatura colocada pelo usuário -->
     <input class="input_temp" id="addTemp" type="number" placeholder="Adicionar temperatura" onchange="Temperatura();">
 
-    <!-- -->
+    <!--select que recebe a escala da temperatura temperatura do valor que o 
+        usuário inseriu -->
     <select id="AddTempValues" onchange="Selecionar(); ">
         <option value="">--Escala--</option>
         <option value="C">Celsius</option>
@@ -36,7 +37,7 @@
     <p>
 
     </p>
-    <!-- -->
+    <!-- Select que recebe a escala na qual o usuário quer converter -->
     <div id="Converter_para">Converter para:</div>
     <select id="Escolha" onchange="Converter();">
         <option value=""> --Escala--</option>
