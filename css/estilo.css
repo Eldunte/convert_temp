@@ -1,3 +1,45 @@
-Cabecalho{
-   font-family: 'Times New Roman', Times, serif;
+body{
+   background-color: salmon;
+   position: fixed;
+	top: 10;
+	bottom: 10;
+	left: 10;
+	right: 10;
+	
+}
+
+header{
+	background-color: #333;
+	height: 3em;
+	color: #FFF;
+	margin-bottom: 1em;
+}
+
+ h1{
+    height: 1cm; 
+   display: block;
+	border: none;
+	border-bottom: 1px solid white;
+	background: none;
+	padding: 20px 10px;
+	font-size: 2em;
+	width: 100%;
+	text-transform: uppercase;
+	outline: none;
+	color: white;
+   box-sizing:inherit;
+   background-color: aquamarine;
+   top: 10%
+}
+header h2{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+header{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
 }

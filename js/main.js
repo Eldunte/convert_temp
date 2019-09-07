@@ -36,6 +36,7 @@ function RealizarCalculo() {
         calculo = parseFloat((document.getElementById('addTemp').value * 9 / 5) + 32);
         valorResultado.value = calculo;
         console.log(calculo);
+        Math.round(calculo);
         //Celsius para Fahrenheit
 
         if (calculo < -479.67) {
@@ -52,6 +53,7 @@ function RealizarCalculo() {
             numero = parseFloat(document.getElementById('addTemp').value)
             calculo = parseFloat(numero + 273.15);
             valorResultado.value = calculo;
+            Math.round(calculo);
             console.log(calculo);
             //Celsius para Kelvin
             if (calculo < 0) {
@@ -67,6 +69,7 @@ function RealizarCalculo() {
                 numero = parseFloat(document.getElementById('addTemp').value)
                 calculo = parseFloat((numero - 32) * 5 / 9);
                 valorResultado.value = calculo;
+                Math.round(calculo);
                 console.log(calculo);
                 //fahrenheit para Celsius
                 if (calculo < -273.15) {
@@ -82,6 +85,7 @@ function RealizarCalculo() {
                     numero = parseFloat(document.getElementById('addTemp').value)
                     calculo = parseFloat((numero - 32) * 5 / 9 + 273.15);
                     valorResultado.value = calculo;
+                    Math.round(calculo);
                     console.log(calculo);
                     //Fahrenheit pra Kelvin
                     if (calculo < 0) {
@@ -99,6 +103,7 @@ function RealizarCalculo() {
                         calculo = parseFloat(numero - 273.15);
                         valorResultado.value = calculo;
                         console.log(calculo);
+                        Math.round(calculo);
                         //Kelvin para Celsius
                         if (calculo < -273.15) {
                             valorResultado.value = null;
@@ -113,8 +118,11 @@ function RealizarCalculo() {
                         if (selecionado == "K" && convert == "Fahrenheit") {
                             numero = parseFloat(document.getElementById('addTemp').value)
                             calculo = parseFloat(1.8 * (numero - 273.15) + 32);
+                            Math.round(calculo);
+
                             valorResultado.value = calculo;
                             console.log(calculo);
+
                             //kelvin para fahrenheit
                             if (calculo < -479.67) {
                                 valorResultado.value = null;
@@ -130,3 +138,17 @@ function RealizarCalculo() {
         }
     }
 }
+
+//realiza o loading
+var i = setInterval(function () {
+    
+    clearInterval(i);
+  
+    // O código desejado é apenas isto:
+    document.getElementById("loading").style.display = "none";
+   
+}, 4000);
+
+
+
+
