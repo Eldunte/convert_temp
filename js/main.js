@@ -150,5 +150,8 @@ var i = setInterval(function () {
 }, 4000);
 
 
+/* salvar pra depois
+*/
+
 
 

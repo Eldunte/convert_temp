@@ -5,7 +5,8 @@ body{
 	bottom: 10;
 	left: 10;
 	right: 10;
-	
+   border-color: blue;
+   border-width: 100em
 }
 
 header{
