@@ -151,6 +151,9 @@ var i = setInterval(function () {
 
 
 /* salvar pra depois
+<div id="loading" style="display: block">
+    <img src="http://media.giphy.com/media/FwviSlrsfa4aA/giphy.gif" style="width:150px;height:150px;" />
+</div>
 */
 
 

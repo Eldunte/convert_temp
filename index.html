@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="icon" href="./img/FotoJet.png" type="image/x-icon">
 
+
     <title>Conversor de temperatura</title>
 </head>
 
@@ -18,13 +19,13 @@
 <div id="receber_convert"> </div>
 <div id="receber_resultado"></div>
 
+    <span style="margin-left: 700px; padding-top:24px;">
+        <img src="/imagens/foto.png">
+    </span>
+</div>
+
 <body>
-    <div id="loading" style="display: block">
-        <img src="http://media.giphy.com/media/FwviSlrsfa4aA/giphy.gif" style="width:150px;height:150px;" />
-    </div>
-   
-   
-   
+
     <div id="QualTemp">Insira a temperatura(digite "ENTER" para confirmar</div>
     <!--input que recebe o valor da temperatura colocada pelo usuário -->
     <div>
@@ -56,13 +57,16 @@
 
         </p>
 
+
         <div id="Convertido">Resultado</div>
         <!-- -->
-        <input id="Resultado" type="number" placeholder disabled="valor final"> <button onclick="RealizarCalculo();">
+        <input id="Resultado" type="number" placeholder disabled="valor final">
+        <button onclick="RealizarCalculo();">
             Realizar Conversão
 
         </button>
     </div>
+
 
 
 
