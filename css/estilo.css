@@ -58,13 +58,15 @@ input, input_temp{
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 1em;
 	position:inherit;
-	 -webkit-transition: width 0.4s ease-in-out;
+	-webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
+}
+	
   
 	
-}
+
 input:focus {
-	width: 87%;
+	width: 80%;
   }
 
   select{
@@ -87,4 +89,31 @@ input:focus {
   left: 0;
   right: 0;
   z-index: 99;
+  font-size: 1em;
+  font-optical-sizing:initial;
+  
   }
+  
+  button{
+	background-color:white;
+  border: none;
+  color:black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 5px solid #4CAF50;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  
+  }
+  button:hover {
+	background-color: royalblue; 
+	color: black;
+	border-color: red;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+
+  
