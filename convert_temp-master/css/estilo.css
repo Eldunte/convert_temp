@@ -1,0 +1,53 @@
+body{
+	background-color: rgb(238, 111, 111);
+	position: fixed;
+	top: 10;
+	bottom: 10;
+	left: 10;
+	right: 10;
+	border-color: blue;
+	border-width: 100em
+ }
+ 
+ title{
+	background-color: #333;
+	height: 3em;
+	color: #FFF;
+	margin-bottom: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ /*estilo do "conversão de temperatura */
+  h1{
+	 border-width: 12cm;
+	 border-color: blue;
+	height: 1cm; 
+	display: block;
+	border: none;
+	border-bottom: 1px solid white;
+	background: none;
+	padding: 20px 10px;
+	font-size: 2em;
+	width: 100%;
+	text-transform: uppercase;
+	outline: none;
+	color: brown;
+	box-sizing:inherit;
+	background-color: aquamarine;
+	top: 10%
+	
+ }
+ header h2{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:   middle;
+ }
+ 
+ header{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:   middle;
+ }
+ 
+ 
