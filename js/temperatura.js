@@ -4,6 +4,8 @@ var inputElement;
 var valorResultado;
 var numero;
 
+
+
 function Selecionar() {
     selecionado = document.getElementById('AddTempValues').value;
     console.log(selecionado);
@@ -21,6 +23,7 @@ function Temperatura() {
 
 }
 
+
 function Converter() {
     convert = document.getElementById('Escolha').value;
     document.getElementById('receber_convert').value = convert;
@@ -37,6 +40,7 @@ function RealizarCalculo() {
         valorResultado.value = calculo;
         console.log(calculo);
         Math.round(calculo);
+        
         //Celsius para Fahrenheit
 
         if (calculo < -479.67) {
@@ -137,6 +141,7 @@ function RealizarCalculo() {
             }
         }
     }
+    
 }
 
 //realiza o loading

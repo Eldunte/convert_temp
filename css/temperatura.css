@@ -1,6 +1,7 @@
 body{
-   background-color: rgb(238, 111, 111);
-   position: fixed;
+   background-image:url(https://previews.123rf.com/images/nnudoo/nnudoo1707/nnudoo170700195/82399869-thermometer-on-a-green-nature-background-and-temperature-measuring-environment-concept-.jpg);
+  
+   
 	
    
 }
@@ -19,33 +20,22 @@ title{
     border-color: blue;
    height: 1cm; 
    display: block;
-	border: none;
-	border-bottom: 1px solid white;
-	background: none;
+	border:2px solid white;
 	padding: 20px 10px;
 	font-size: 2em;
-	width: 100%;
+	width: 90%;
 	text-transform: uppercase;
 	outline: none;
-	color: brown;
+	color: black;
    box-sizing:inherit;
-   background-color: aquamarine;
-   top: 10%
+   background-color:skyblue;
+   top: 10%;
+   border-radius: 12cm;
    
 }
-header h2{
-	font-size: 2em;
-	display:inline-block;
-	vertical-align:	middle;
-}
 
-header{
-	content: '';
-	display:inline-block;
-	height: 100%;
-	vertical-align:	middle;
-}
 
+/*Estilo dos Placeholders*/
 input, input_temp{
 	width: 40%;
 	padding: 12px 20px;
@@ -53,22 +43,25 @@ input, input_temp{
 	border: 2px solid black;
 	border-radius: 2px;
 	background-color: #3CBC8D;
-	color: white;
+	color: black;
 	box-sizing: border-box;
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 1em;
 	position:inherit;
 	-webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
+  border-radius: 12cm;
+  font-size: 1.1em
 }
 	
   
 	
-
+/*Para dar um efeito de aumento da barra*/
 input:focus {
 	width: 80%;
   }
 
+  /* Estilo dos Selects*/
   select{
 	font-family: 'Times New Roman', Times, serif;
 	background-color: DodgerBlue;
@@ -91,9 +84,9 @@ input:focus {
   z-index: 99;
   font-size: 1em;
   font-optical-sizing:initial;
-  
+  border-radius: 12cm;
   }
-  
+  /*Estilo do botão*/
   button{
 	background-color:white;
   border: none;
@@ -106,8 +99,10 @@ input:focus {
   border: 5px solid #4CAF50;
   -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
+  border-radius: 12cm;
   
   }
+  /*hover para trocar a cor quando o mouse passa por cima*/
   button:hover {
 	background-color: royalblue; 
 	color: black;
@@ -115,5 +110,52 @@ input:focus {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
   
+  h3{
+	font-size: 1.4em;
+	background-color: skyblue;
+	width: 40%;
+	border: 2px solid purple;
+	border-radius: 12cm;
+  }
+  h4{
+	font-size: 1.4em;
+	background-color: skyblue;
+	width: 20%;
+	border: 2px solid purple;
+	border-radius: 12cm;
+	}
+  
+	h5{
+	font-size: 1.4em;
+	background-color: skyblue;
+	width: 10%;
+	border: 2px solid purple;
+	border-radius: 12cm;
+  }
+#inicio{
+	
+		background-color:blue;
+	  border: none;
+	  color:black;
+	  padding: 10px 20px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  border: 5px solid #4CAF50;
+	  -webkit-transition-duration: 0.4s; 
+	  transition-duration: 0.4s;
+	  border-radius: 12cm;
+	  
+	  
+}
+#inicio:hover {
+	background-color: royalblue; 
+	color: black;
+	border-color: red;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  /*https://www.tutoriart.com.br/como-criar-transicao-fade-com-css-no-carregamento-da-pagina-e-imagens/*/
 
   
