@@ -37,7 +37,7 @@ title{
 
 /*Estilo dos Placeholders*/
 input, input_temp{
-	width: 40%;
+	width: 10%;
 	padding: 12px 20px;
 	margin: 8px 0;
 	border: 2px solid black;
@@ -58,7 +58,7 @@ input, input_temp{
 	
 /*Para dar um efeito de aumento da barra*/
 input:focus {
-	width: 80%;
+	width: 30%;
   }
 
   /* Estilo dos Selects*/
@@ -134,7 +134,7 @@ input:focus {
   }
 #inicio{
 	
-		background-color:blue;
+		background-color:white;
 	  border: none;
 	  color:black;
 	  padding: 10px 20px;
@@ -150,7 +150,7 @@ input:focus {
 	  
 }
 #inicio:hover {
-	background-color: royalblue; 
+	background-color: yellowgreen; 
 	color: black;
 	border-color: red;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
